@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+CL:wght@100..400&family=Playwrite+ES:wght@100..400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
 @keyframes popup {
     0%{translate: 0px 0;}
     50%{translate: -20px 0;}
@@ -17,7 +19,8 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: cursive;
+    font-family: "Dosis", sans-serif, Arial, cursive;
+    font-weight: 500;
     color: #345;
     transition: 0.2s ease, outline;
     box-sizing: border-box;
@@ -43,13 +46,14 @@ header {
 }
 
 p,span{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h1{
     font-family: "Playwrite CL", cursive;
     color: #345;
     text-shadow: 2px 2px 0 #fff,4px 4px 0 #FFDE4D;
+    font-weight: bold;
 }
 
 li,
