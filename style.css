@@ -227,21 +227,34 @@ footer span {
   color: #fff;
 }
 
+#types {
+  height: calc(100% - 100px);
+}
 #types .cards {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 100px);
+  padding: 25px;
 }
 #types .cards .card {
-  width: 33%;
-  height: 80%;
+  width: auto;
+  max-width: 200px;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 4fr 1fr;
   justify-items: center;
   align-items: center;
-  background-color: rgba(221, 221, 221, 0.3333333333);
+  border: 2px solid #678;
+  overflow: hidden;
   cursor: pointer;
   border-radius: 15px;
+  padding: 10px;
+}
+#types .cards .card p {
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 #types .cards .card img {
   width: 100%;
@@ -276,5 +289,28 @@ footer span {
     background-color: rgba(255, 255, 255, 0.2666666667);
     opacity: 1;
     box-sizing: content-box;
+  }
+}
+@media screen and (max-width: 500px) {
+  #about, #help, #types {
+    flex-flow: column;
+  }
+  #about img, #help img, #types img {
+    order: -1;
+  }
+  #about .description, #help .description, #types .description {
+    width: 100%;
+  }
+  #help {
+    background-color: #FFDE4D;
+  }
+  #help img {
+    display: none;
+  }
+  #types .cards {
+    flex-flow: row wrap;
+  }
+  #types .cards .card img {
+    width: 100px;
   }
 }/*# sourceMappingURL=style.css.map */
