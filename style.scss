@@ -207,6 +207,7 @@ main {
     section {
         width: 100%;
         height: calc(100% - 80px);
+        min-height: 350px;
         padding: 20px;
     }
 }
