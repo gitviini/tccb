@@ -262,6 +262,7 @@ footer span {
 }
 #types .cards .card:hover {
   scale: 1.05;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 650px) {
