@@ -228,12 +228,12 @@ footer span {
 }
 
 #types {
-  height: calc(100% - 100px);
+  height: auto;
 }
 #types .cards {
   width: 100%;
   height: calc(100% - 100px);
-  padding: 25px;
+  padding: 20px;
 }
 #types .cards .card {
   width: auto;
@@ -311,6 +311,6 @@ footer span {
     flex-flow: row wrap;
   }
   #types .cards .card img {
-    width: 100px;
+    max-width: 100px;
   }
 }/*# sourceMappingURL=style.css.map */
